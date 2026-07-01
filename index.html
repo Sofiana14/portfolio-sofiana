@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="id" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Sofiana Dewi Larasati - Informatics Engineering Student, UI/UX Designer, System Analyst & Web Developer"
+    />
+    <title>Sofiana Dewi Larasati | Premium Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              navy: "#0F172A",
+              indigo: "#1E293B",
+              gold: "#F59E0B",
+              light: "#E5E7EB",
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-light text-gray-800 dark:bg-navy dark:text-light transition-colors duration-300 font-sans antialiased relative"
+  >
+    <div
+      id="loader"
+      class="fixed inset-0 z-[100] bg-navy flex items-center justify-center transition-opacity duration-500"
+    >
+      <div class="loader-ring"></div>
+    </div>
+
+    <nav
+      id="navbar"
+      class="fixed w-full z-50 transition-all duration-300 border-b border-transparent"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="#home" class="font-bold text-2xl text-gold tracking-wider"
+            >SDL<span class="text-white">.</span></a
+          >
+
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button
+              id="theme-toggle"
+              class="w-10 h-10 rounded-full glass flex items-center justify-center hover:text-gold transition"
+            >
+              <i class="fas fa-sun hidden dark:block"></i>
+              <i class="fas fa-moon block dark:hidden"></i>
+            </button>
+          </div>
+
+          <div class="md:hidden flex items-center space-x-4">
+            <button
+              id="theme-toggle-mobile"
+              class="w-10 h-10 rounded-full glass flex items-center justify-center"
+            >
+              <i class="fas fa-sun hidden dark:block"></i>
+              <i class="fas fa-moon block dark:hidden"></i>
+            </button>
+            <button id="mobile-menu-btn" class="text-2xl hover:text-gold">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute w-full left-0 top-20 glass border-t border-white/10 p-4 flex flex-col space-y-4"
+      >
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#portfolio" class="mobile-link">Portfolio</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+    >
+      <div id="particles-js" class="absolute inset-0 z-0"></div>
+
+      <div
+        class="relative z-10 text-center px-4 max-w-4xl mx-auto"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <div class="relative inline-block mb-6 group">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-gold to-yellow-300 rounded-full blur opacity-70 group-hover:opacity-100 transition duration-500"
+          ></div>
+          <img
+            src="assets/images/profile.jpg"
+            alt="Sofiana Dewi Larasati"
+            class="relative w-40 h-40 object-cover rounded-full border-4 border-navy"
+          />
+        </div>
+
+        <h1
+          class="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 dark:from-white dark:to-gray-300"
+        >
+          Sofiana Dewi Larasati
+        </h1>
+        <p
+          class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 font-medium"
+        >
+          Informatics Engineering Student | Database Enthusiast | UI/UX Designer
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="assets/CV_Sofiana_Dewi_Larasati.pdf"
+            download
+            class="btn-primary"
+          >
+            <i class="fas fa-download mr-2"></i> Download CV
+          </a>
+          <a href="#portfolio" class="btn-secondary">
+            <i class="fas fa-briefcase mr-2"></i> View Portfolio
+          </a>
+          <a href="#contact" class="btn-outline">
+            <i class="fas fa-envelope mr-2"></i> Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-24 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="w-full md:w-1/2" data-aos="fade-right">
+            <div class="glass p-8 rounded-2xl relative border-l-4 border-gold">
+              <i
+                class="fas fa-quote-left text-4xl text-gold/20 absolute top-4 left-4"
+              ></i>
+              <h2 class="text-3xl font-bold mb-6 mt-4">About Me</h2>
+              <p
+                class="text-gray-600 dark:text-gray-300 leading-relaxed text-lg text-justify"
+              >
+                "Saya adalah mahasiswa S1 Teknik Informatika yang memiliki minat
+                pada pengembangan sistem informasi, perancangan database MySQL,
+                desain UI/UX, serta analisis sistem menggunakan UML dan Use Case
+                Diagram. Saya berkomitmen menciptakan solusi digital yang
+                efisien, modern, dan mudah digunakan melalui pendekatan desain
+                dan teknologi yang berorientasi pada pengguna."
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 space-y-6" data-aos="fade-left">
+            <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+              <i class="fas fa-graduation-cap text-gold"></i> Education &
+              Experience
+            </h3>
+
+            <div
+              class="glass p-6 rounded-xl hover:-translate-y-1 transition duration-300"
+            >
+              <span
+                class="text-xs font-bold text-gold bg-gold/10 px-3 py-1 rounded-full"
+                >Education</span
+              >
+              <h4 class="text-lg font-bold mt-3">S1 Teknik Informatika</h4>
+              <p class="text-sm text-gray-400">
+                Universitas Duta Bangsa Surakarta
+              </p>
+            </div>
+
+            <div
+              class="glass p-6 rounded-xl hover:-translate-y-1 transition duration-300"
+            >
+              <span
+                class="text-xs font-bold text-gold bg-gold/10 px-3 py-1 rounded-full"
+                >Experience (Academic Projects)</span
+              >
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="badge">UI/UX Designer</span>
+                <span class="badge">Mobile App Designer</span>
+                <span class="badge">Database Designer</span>
+                <span class="badge">System Analyst</span>
+                <span class="badge">Web Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-black/5 dark:bg-black/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="text-gray-500 mt-2">
+            Kumpulan teknologi dan metode yang saya kuasai
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="glass p-8 rounded-2xl"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+              <i class="fas fa-pen-nib text-gold"></i> UI/UX Design
+            </h3>
+            <div class="space-y-4">
+              <div class="skill-bar">
+                <div class="flex justify-between mb-1 text-sm">
+                  <span>Figma</span>
+                </div>
+                <div class="h-2 bg-indigo rounded-full">
+                  <div class="h-full bg-gold rounded-full w-[90%]"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="flex justify-between mb-1 text-sm">
+                  <span>Wireframing & Prototyping</span>
+                </div>
+                <div class="h-2 bg-indigo rounded-full">
+                  <div class="h-full bg-gold rounded-full w-[85%]"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="flex justify-between mb-1 text-sm">
+                  <span>User Flow & Design Thinking</span>
+                </div>
+                <div class="h-2 bg-indigo rounded-full">
+                  <div class="h-full bg-gold rounded-full w-[88%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass p-8 rounded-2xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+              <i class="fas fa-database text-gold"></i> Database
+            </h3>
+            <div class="space-y-4">
+              <div class="skill-bar">
+                <div class="flex justify-between mb-1 text-sm">
+                  <span>MySQL & SQL Query</span>
+                </div>
+                <div class="h-2 bg-indigo rounded-full">
+                  <div class="h-full bg-gold rounded-full w-[95%]"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="flex justify-between mb-1 text-sm">
+                  <span>Database Design & ERD</span>
+                </div>
+                <div class="h-2 bg-indigo rounded-full">
+                  <div class="h-full bg-gold rounded-full w-[92%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass p-8 rounded-2xl"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+              <i class="fas fa-project-diagram text-gold"></i> System Analysis
+            </h3>
+            <div class="space-y-4">
+              <div class="skill-bar">
+                <div class="flex justify-between mb-1 text-sm">
+                  <span>UML & Use Case Diagram</span>
+                </div>
+                <div class="h-2 bg-indigo rounded-full">
+                  <div class="h-full bg-gold rounded-full w-[90%]"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="flex justify-between mb-1 text-sm">
+                  <span>Activity Diagram</span>
+                </div>
+                <div class="h-2 bg-indigo rounded-full">
+                  <div class="h-full bg-gold rounded-full w-[85%]"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="flex justify-between mb-1 text-sm">
+                  <span>Requirement Analysis</span>
+                </div>
+                <div class="h-2 bg-indigo rounded-full">
+                  <div class="h-full bg-gold rounded-full w-[88%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass p-8 rounded-2xl lg:col-span-2"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+              <i class="fas fa-code text-gold"></i> Programming
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div
+                class="glass p-4 text-center rounded-xl font-medium hover:border-gold border border-transparent transition"
+              >
+                HTML / CSS
+              </div>
+              <div
+                class="glass p-4 text-center rounded-xl font-medium hover:border-gold border border-transparent transition"
+              >
+                JavaScript
+              </div>
+              <div
+                class="glass p-4 text-center rounded-xl font-medium hover:border-gold border border-transparent transition"
+              >
+                PHP
+              </div>
+              <div
+                class="glass p-4 text-center rounded-xl font-medium hover:border-gold border border-transparent transition"
+              >
+                Flutter
+              </div>
+              <div
+                class="glass p-4 text-center rounded-xl font-medium hover:border-gold border border-transparent transition"
+              >
+                Dart
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass p-8 rounded-2xl"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+              <i class="fas fa-tools text-gold"></i> Tools
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="badge">VS Code</span>
+              <span class="badge">Android Studio</span>
+              <span class="badge">GitHub</span>
+              <span class="badge">XAMPP</span>
+              <span class="badge">phpMyAdmin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="section-title">My Services</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+            <h3 class="text-xl font-bold mb-3">Mobile App Design</h3>
+            <p class="text-sm text-gray-400">
+              Merancang antarmuka aplikasi mobile yang intuitif dan berfokus
+              pada pengalaman pengguna.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box"><i class="fas fa-desktop"></i></div>
+            <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+            <p class="text-sm text-gray-400">
+              Membuat desain platform web dan dashboard interaktif menggunakan
+              Figma.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box"><i class="fas fa-database"></i></div>
+            <h3 class="text-xl font-bold mb-3">Database Design</h3>
+            <p class="text-sm text-gray-400">
+              Strukturisasi relasi data yang optimal dan aman menggunakan MySQL.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+            <h3 class="text-xl font-bold mb-3">System Analysis</h3>
+            <p class="text-sm text-gray-400">
+              Menganalisis kebutuhan bisnis untuk menghasilkan alur proses yang
+              efisien.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+            <div class="icon-box"><i class="fas fa-sitemap"></i></div>
+            <h3 class="text-xl font-bold mb-3">UML & Use Case</h3>
+            <p class="text-sm text-gray-400">
+              Pemodelan arsitektur perangkat lunak untuk komunikasi tim teknis
+              yang akurat.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="icon-box"><i class="fas fa-code"></i></div>
+            <h3 class="text-xl font-bold mb-3">Web Development</h3>
+            <p class="text-sm text-gray-400">
+              Membangun website responsif dari ujung depan (frontend) hingga
+              logika backend.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-black/5 dark:bg-black/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="text-gray-500 mt-2">
+            Karya terbaik yang telah saya selesaikan
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/xxi-cafe.jpg" alt="XXI Cafe" />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-gold text-xs font-bold uppercase mb-2 tracking-wider"
+                >UI/UX Design</span
+              >
+              <h3 class="text-xl font-bold mb-3">
+                Aplikasi Pemesanan Tiket Bioskop XXI
+              </h3>
+              <p class="text-sm text-gray-400 mb-4 flex-grow">
+                Merancang prototype aplikasi pemesanan makanan/minuman bioskop
+                dengan fokus pada flow yang sederhana dan modern.
+              </p>
+              <div class="mb-4">
+                <p class="text-xs font-semibold text-white mb-2">Kontribusi:</p>
+                <div class="flex flex-wrap gap-1 text-xs">
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >Wireframe</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >UI/Prototype</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >User Flow</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center mt-auto border-t border-white/10 pt-4"
+              >
+                <span class="text-xs font-bold text-gray-500"
+                  ><i class="fab fa-figma text-gold"></i> Figma</span
+                >
+                <a
+                  href="javascript:void(0)"
+                  onclick="alert('Halaman detail project akan segera hadir!')"
+                  class="text-gold text-sm font-bold hover:underline"
+                  >View Detail <i class="fas fa-arrow-right text-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-img-wrapper">
+              <img
+                src="assets/images/fashionque-wireframe.jpg"
+                alt="FashionQue Wireframe"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-gold text-xs font-bold uppercase mb-2 tracking-wider"
+                >UI/UX Design</span
+              >
+              <h3 class="text-xl font-bold mb-3">
+                Wireframe Website FashionQue
+              </h3>
+              <p class="text-sm text-gray-400 mb-4 flex-grow">
+                Membuat wireframe dan prototype e-commerce fashion untuk
+                mengoptimalkan alur transaksi pengguna.
+              </p>
+              <div class="mb-4">
+                <p class="text-xs font-semibold text-white mb-2">Kontribusi:</p>
+                <div class="flex flex-wrap gap-1 text-xs">
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >UI/UX Design</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >Wireframing</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >Prototyping</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center mt-auto border-t border-white/10 pt-4"
+              >
+                <span class="text-xs font-bold text-gray-500"
+                  ><i class="fab fa-figma text-gold"></i> Figma</span
+                >
+                <a
+                  href="javascript:void(0)"
+                  onclick="alert('Halaman detail project akan segera hadir!')"
+                  class="text-gold text-sm font-bold hover:underline"
+                  >View Detail <i class="fas fa-arrow-right text-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/fashionque-db.jpg" alt="FashionQue DB" />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-gold text-xs font-bold uppercase mb-2 tracking-wider"
+                >Database Design</span
+              >
+              <h3 class="text-xl font-bold mb-3">
+                Database E-Commerce FashionQue
+              </h3>
+              <p class="text-sm text-gray-400 mb-4 flex-grow">
+                Merancang relasi database terstruktur untuk sistem e-commerce
+                berskala meliputi user, produk, cart, dan transaksi.
+              </p>
+              <div class="mb-4">
+                <p class="text-xs font-semibold text-white mb-2">Kontribusi:</p>
+                <div class="flex flex-wrap gap-1 text-xs">
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >DB Design</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >SQL Query</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >Normalisasi</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center mt-auto border-t border-white/10 pt-4"
+              >
+                <span class="text-xs font-bold text-gray-500"
+                  ><i class="fas fa-database text-gold"></i> MySQL</span
+                >
+                <a
+                  href="javascript:void(0)"
+                  onclick="alert('Halaman detail project akan segera hadir!')"
+                  class="text-gold text-sm font-bold hover:underline"
+                  >View Detail <i class="fas fa-arrow-right text-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="portfolio-img-wrapper">
+              <img
+                src="assets/images/fashionque-web.jpg"
+                alt="FashionQue Web"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-gold text-xs font-bold uppercase mb-2 tracking-wider"
+                >Web Development</span
+              >
+              <h3 class="text-xl font-bold mb-3">
+                Website E-Commerce FashionQue
+              </h3>
+              <p class="text-sm text-gray-400 mb-4 flex-grow">
+                Pengembangan fungsionalitas full-stack untuk platform belanja
+                pakaian online yang dinamis.
+              </p>
+              <div class="mb-4">
+                <p class="text-xs font-semibold text-white mb-2">Fitur:</p>
+                <div class="flex flex-wrap gap-1 text-xs">
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >Katalog</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >Dashboard</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >Keranjang</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center mt-auto border-t border-white/10 pt-4"
+              >
+                <span class="text-xs font-bold text-gray-500"
+                  ><i class="fas fa-code text-gold"></i> HTML/PHP/JS/DB</span
+                >
+                <a
+                  href="javascript:void(0)"
+                  onclick="alert('Halaman detail project akan segera hadir!')"
+                  class="text-gold text-sm font-bold hover:underline"
+                  >View Detail <i class="fas fa-arrow-right text-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="portfolio-img-wrapper">
+              <img
+                src="assets/images/booking-fasilitas.jpg"
+                alt="Booking System"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-gold text-xs font-bold uppercase mb-2 tracking-wider"
+                >System Analysis</span
+              >
+              <h3 class="text-xl font-bold mb-3">
+                Sistem Booking Fasilitas Umum
+              </h3>
+              <p class="text-sm text-gray-400 mb-4 flex-grow">
+                Pemodelan Use Case untuk sistem manajemen reservasi yang
+                melibatkan pengguna, admin, dan penyewa.
+              </p>
+              <div class="mb-4">
+                <p class="text-xs font-semibold text-white mb-2">Kontribusi:</p>
+                <div class="flex flex-wrap gap-1 text-xs">
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >UML Modeling</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >Req Analysis</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center mt-auto border-t border-white/10 pt-4"
+              >
+                <span class="text-xs font-bold text-gray-500"
+                  ><i class="fas fa-project-diagram text-gold"></i> UML</span
+                >
+                <a
+                  href="javascript:void(0)"
+                  onclick="alert('Halaman detail project akan segera hadir!')"
+                  class="text-gold text-sm font-bold hover:underline"
+                  >View Detail <i class="fas fa-arrow-right text-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="portfolio-img-wrapper">
+              <img
+                src="assets/images/laundry-system.jpg"
+                alt="Laundry System"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-gold text-xs font-bold uppercase mb-2 tracking-wider"
+                >System Analysis</span
+              >
+              <h3 class="text-xl font-bold mb-3">Sistem Pemesanan Laundry</h3>
+              <p class="text-sm text-gray-400 mb-4 flex-grow">
+                Menganalisis kebutuhan dan alur proses bisnis pemesanan laundry
+                untuk customer dan admin layanan.
+              </p>
+              <div class="mb-4">
+                <p class="text-xs font-semibold text-white mb-2">Kontribusi:</p>
+                <div class="flex flex-wrap gap-1 text-xs">
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >System Analysis</span
+                  >
+                  <span class="bg-indigo/50 px-2 py-1 rounded text-gray-300"
+                    >BPM</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center mt-auto border-t border-white/10 pt-4"
+              >
+                <span class="text-xs font-bold text-gray-500"
+                  ><i class="fas fa-project-diagram text-gold"></i> UML</span
+                >
+                <a
+                  href="javascript:void(0)"
+                  onclick="alert('Halaman detail project akan segera hadir!')"
+                  class="text-gold text-sm font-bold hover:underline"
+                  >View Detail <i class="fas fa-arrow-right text-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass rounded-2xl overflow-hidden group flex flex-col md:col-span-2 lg:col-span-3 lg:w-3/4 mx-auto border border-white/10 hover:border-gold/50 transition-colors duration-300 shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div
+              class="w-full h-64 sm:h-80 relative overflow-hidden bg-slate-900 border-b border-white/10"
+            >
+              <img
+                src="assets/images/lexicon-app.jpg"
+                alt="Lexicon App"
+                class="w-full h-full object-cover sm:object-contain transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+
+            <div
+              class="p-6 md:p-8 flex flex-col flex-grow bg-navy dark:bg-navy relative z-10"
+            >
+              <span
+                class="text-gold text-xs font-bold uppercase mb-2 tracking-wider"
+                >Mobile Application</span
+              >
+              <h3 class="text-xl md:text-2xl font-bold mb-3 text-white">
+                Lexicon - Aplikasi Membaca Novel
+              </h3>
+              <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+                Pengembangan platform membaca novel digital interaktif dengan
+                fitur manajemen konten untuk admin, bookmarking, dan tracking
+                statistik genre.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div>
+                  <p class="text-xs font-semibold text-gray-400 mb-2">
+                    Kontribusi:
+                  </p>
+                  <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-indigo/80 px-3 py-1.5 rounded text-gray-200"
+                      >UI/UX</span
+                    >
+                    <span class="bg-indigo/80 px-3 py-1.5 rounded text-gray-200"
+                      >Database</span
+                    >
+                    <span class="bg-indigo/80 px-3 py-1.5 rounded text-gray-200"
+                      >Admin Dashboard</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold text-gray-400 mb-2">
+                    Teknologi:
+                  </p>
+                  <div class="flex flex-wrap gap-2 text-xs">
+                    <span
+                      class="bg-blue-900/50 text-blue-300 border border-blue-800 px-3 py-1.5 rounded"
+                      >Flutter</span
+                    >
+                    <span
+                      class="bg-orange-900/50 text-orange-300 border border-orange-800 px-3 py-1.5 rounded"
+                      >Firebase/DB</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center mt-auto border-t border-white/10 pt-6"
+              >
+                <a
+                  href="javascript:void(0)"
+                  onclick="alert('Halaman detail project akan segera hadir!')"
+                  class="btn-primary text-sm py-2 px-6"
+                >
+                  <i class="fas fa-play mr-2"></i> View Project Detail
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="section-title">Achievements & Milestones</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="glass p-6 rounded-xl border-l-4 border-gold flex items-center gap-4 hover:scale-105 transition"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <div class="text-3xl text-gold"><i class="fas fa-tasks"></i></div>
+            <div>
+              <h4 class="font-bold text-lg">7+ Academic Projects Completed</h4>
+            </div>
+          </div>
+          <div
+            class="glass p-6 rounded-xl border-l-4 border-gold flex items-center gap-4 hover:scale-105 transition"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="text-3xl text-gold">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Creator of Lexicon Application</h4>
+            </div>
+          </div>
+          <div
+            class="glass p-6 rounded-xl border-l-4 border-gold flex items-center gap-4 hover:scale-105 transition"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <div class="text-3xl text-gold">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">UI/UX Designer for XXI Cafe</h4>
+            </div>
+          </div>
+          <div
+            class="glass p-6 rounded-xl border-l-4 border-gold flex items-center gap-4 hover:scale-105 transition"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
+            <div class="text-3xl text-gold">
+              <i class="fas fa-database"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">DB Designer for FashionQue</h4>
+            </div>
+          </div>
+          <div
+            class="glass p-6 rounded-xl border-l-4 border-gold flex items-center gap-4 hover:scale-105 transition"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="text-3xl text-gold">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Analyst for Public Booking</h4>
+            </div>
+          </div>
+          <div
+            class="glass p-6 rounded-xl border-l-4 border-gold flex items-center gap-4 hover:scale-105 transition"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <div class="text-3xl text-gold"><i class="fas fa-tshirt"></i></div>
+            <div>
+              <h4 class="font-bold text-lg">Analyst for Laundry System</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-black/5 dark:bg-black/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="text-gray-500 mt-2">
+            Mari berkolaborasi membangun solusi teknologi masa depan.
+          </p>
+        </div>
+
+        <div
+          class="grid md:grid-cols-5 gap-12 bg-indigo/5 rounded-3xl p-8 glass border border-white/5"
+        >
+          <div class="md:col-span-2 space-y-8" data-aos="fade-right">
+            <div>
+              <h3 class="text-2xl font-bold mb-6">Let's Talk</h3>
+              <p class="text-gray-400 mb-8">
+                Saya terbuka untuk kesempatan freelance, proyek kolaborasi,
+                maupun penawaran pekerjaan profesional.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full glass border border-gold/30 flex items-center justify-center text-gold text-xl"
+                >
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500">Email</p>
+                  <p class="font-bold text-light">sofianadewi1402@email.com</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full glass border border-gold/30 flex items-center justify-center text-gold text-xl"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500">WhatsApp</p>
+                  <p class="font-bold text-light">+62 882-1621-4771</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-white/10">
+              <p class="text-sm text-gray-500 mb-4">Social Profiles</p>
+              <div class="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/in/sofiana-dewi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://github.com/Sofiana14"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-3" data-aos="fade-left">
+            <form id="contact-form" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-400 mb-2"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    class="w-full px-4 py-3 rounded-lg bg-navy/50 border border-white/10 focus:border-gold focus:ring-1 focus:ring-gold text-white outline-none transition"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-400 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-3 rounded-lg bg-navy/50 border border-white/10 focus:border-gold focus:ring-1 focus:ring-gold text-white outline-none transition"
+                    placeholder="john@example.com"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-400 mb-2"
+                  >Pesan</label
+                >
+                <textarea
+                  name="message"
+                  required
+                  rows="5"
+                  class="w-full px-4 py-3 rounded-lg bg-navy/50 border border-white/10 focus:border-gold focus:ring-1 focus:ring-gold text-white outline-none transition"
+                  placeholder="Tuliskan pesan atau ide project Anda..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                id="submit-btn"
+                class="w-full btn-primary py-4 text-lg"
+              >
+                Kirim Pesan <i class="fas fa-paper-plane ml-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-navy border-t border-white/10 py-8 relative">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h3 class="text-2xl font-bold text-gold tracking-widest mb-4">SDL.</h3>
+        <p class="text-gray-500 text-sm">
+          © 2026 Sofiana Dewi Larasati. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <button
+      id="back-to-top"
+      class="fixed bottom-8 right-8 w-12 h-12 bg-gold text-navy rounded-full text-xl flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-yellow-400 shadow-lg shadow-gold/30 z-50"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

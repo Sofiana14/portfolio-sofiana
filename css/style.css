@@ -1,0 +1,125 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; /* Navy */
+}
+::-webkit-scrollbar-thumb {
+  background: #f59e0b; /* Gold */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dark .glass {
+  background: rgba(30, 41, 59, 0.4); /* Indigo opacity */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Typography & Utilities */
+.section-title {
+  @apply text-3xl md:text-4xl font-bold inline-block relative pb-3;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  bottom: 0;
+  left: 25%;
+  background: #f59e0b;
+  border-radius: 2px;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply px-8 py-3 bg-gold text-white font-semibold rounded-full hover:bg-yellow-600 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300 transform hover:-translate-y-1 inline-block;
+}
+.btn-secondary {
+  @apply px-8 py-3 bg-indigo text-white font-semibold rounded-full hover:bg-slate-700 shadow-lg transition-all duration-300 transform hover:-translate-y-1 inline-block;
+}
+.btn-outline {
+  @apply px-8 py-3 border-2 border-gold text-gold font-semibold rounded-full hover:bg-gold hover:text-white transition-all duration-300 transform hover:-translate-y-1 inline-block;
+}
+
+/* Badges */
+.badge {
+  @apply px-3 py-1 text-xs font-medium bg-navy/5 dark:bg-navy/50 text-navy dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-full;
+}
+
+/* Social Icons */
+.social-icon {
+  @apply w-10 h-10 rounded-full glass flex items-center justify-center text-lg hover:text-gold hover:border-gold transition-all duration-300 transform hover:-translate-y-1;
+}
+
+/* Navbar Scrolled State */
+.navbar-scrolled {
+  @apply bg-white/90 dark:bg-navy/90 backdrop-blur-md shadow-md border-b border-gray-200 dark:border-white/5;
+}
+.nav-link {
+  @apply text-gray-700 dark:text-gray-300 font-medium hover:text-gold dark:hover:text-gold transition-colors duration-300 relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #f59e0b;
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Service Card */
+.service-card {
+  @apply glass p-8 rounded-2xl text-center hover:-translate-y-2 transition-all duration-300 border-b-4 border-transparent hover:border-gold cursor-default;
+}
+.icon-box {
+  @apply w-16 h-16 mx-auto rounded-full bg-navy/10 dark:bg-navy/50 flex items-center justify-center text-2xl text-gold mb-6 transition-transform duration-300;
+}
+.service-card:hover .icon-box {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Portfolio Card */
+.portfolio-card {
+  @apply glass rounded-2xl overflow-hidden group flex flex-col h-full border border-white/10 hover:border-gold/50 transition-colors duration-300;
+}
+.portfolio-img-wrapper {
+  @apply relative overflow-hidden h-52;
+}
+.portfolio-img-wrapper img {
+  @apply w-full h-full object-cover transition-transform duration-700 group-hover:scale-110;
+}
+.portfolio-img-wrapper::after {
+  content: "";
+  @apply absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-colors duration-500;
+}
+
+/* Loading Animation */
+.loader-ring {
+  width: 60px;
+  height: 60px;
+  border: 4px solid rgba(245, 158, 11, 0.1);
+  border-left-color: #f59e0b;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
